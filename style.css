@@ -238,6 +238,9 @@ display: none;
   justify-content: space-between;
   align-items: center;
 }
+.banner img{
+  width: 35rem;
+}
 @media screen and (max-width:486px){
   .banner .banner__wrapper{
     display:flex;
