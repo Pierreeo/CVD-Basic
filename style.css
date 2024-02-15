@@ -129,6 +129,9 @@
     position:fixed;
     width:100%
   }
+  header .shadow{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
   .header h3 span{
     color: var(--primary);
   }
@@ -685,6 +688,7 @@ font-size: 1.2rem;
 .footer{
   background:var(--dark);
   padding:2rem 0;
+  border-top: 0.5px solid var(--light);
 }
 .footer__wrapper{
   color:gray;
@@ -725,7 +729,7 @@ font-size: 1.2rem;
 .updates__wrapper{
   display: grid;
   grid-template-columns: 2.5fr 1.5fr;
-  grid-gap:10rem;
+  grid-gap:5rem;
 }
 .updates__left ol{
   padding: 5rem 0;
@@ -752,6 +756,16 @@ color: var(--primary);
 }
 .updates__left h4{
   padding: 3rem 0;
+}
+.updates .brdr{
+  border-bottom: 0.5px solid var(--dark);
+  padding-bottom: 2rem;
+}
+.updates .brdr2{
+  border-bottom: 0.5px solid var(--dark);
+}
+.updates__right .recent{
+  padding: 5rem 0;
 }
 
 
@@ -813,7 +827,112 @@ margin:1rem ;
   
 }
 
+/* CONTACTS */
+.contact{
+  padding: 5rem 0;
+  background-color: var(--dark);
+}
+.contact__wrapper{
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  grid-gap:5rem;
+}
+.contact__title h2{
+  font-size: 5rem;
+  color: var(--primary);
+  padding: 3rem 0;
+  font-weight: 600;
+}
+.contact__title p{
+  color: var(--light);
+  max-width:40rem;
+}
+.contact__info ul{
+  display: flex;
+  color: var(--light);
+  gap: 5rem;
+  padding: 2rem 0;
+}
+.kontak__left{
+  padding: 5em 0;
+}
+.kontak__bot ul{
+  display: flex;
+  padding: 5rem 0;
+}
+.kontak__bot ul li a{
+  color: var(--light);
+}
+.contact__info i{
+color: var(--primary);
+}
+.contact__wrapper i{
+  font-size: 2.5rem;
+}
 
+.contactbox input{
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  outline:0;
+}
+.contactbox textarea{
+  width: 100%;
+  height: 150px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  outline:0;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+.contactbox textarea{  
+font-family:"Times New Roman";
+}
+.contactbox .misids{
+  padding-left:34.6rem;
+}
+.kontak__right{
+  padding: 10rem 0;
+}
+
+.bord{
+  border-top: 0.5x solid var(--light);
+}
+
+@media screen and (max-width:486px){
+  .contact .contact__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.bm{
+  display:inline-block;
+  padding:0 .5rem;
+  border:1px solid transparent;
+  text-align:center;
+  transition:.5s ease;
+}
+.bm.bg--fb:hover{
+  color:#0000FF;
+  scale:1;
+  transition:.5s ease;
+}
+.bm.bg--twt:hover{
+  color:#1DA1F2;
+  scale:1;
+  transition:.5s ease;
+}
+.bm.bg--ig:hover{
+  color:#e1306c;
+  scale:1;
+  transition:.5s ease;
+}
+.bm.bg--yt:hover{
+  color:#FF0000;
+  scale:1;
+  transition:.5s ease;
+}
 /* REPEATABLE PATTERNS */
 .btn{
   display:inline-block;
